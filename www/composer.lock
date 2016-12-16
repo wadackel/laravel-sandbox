@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "93a05596d962ecc6c0a5a8890c93c620",
-    "content-hash": "7e2dbb30f8cc3efc7fb53d6059e8bee6",
+    "hash": "863fe4dbbd4fcf230191ffcda7dd21ea",
+    "content-hash": "91647f8bbd1ee8ecd7da7aa9694cf706",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1725,6 +1725,80 @@
                 "uuid"
             ],
             "time": "2016-11-22 19:21:44"
+        },
+        {
+            "name": "socialiteproviders/google",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Google-Plus.git",
+                "reference": "2b007bcfe210f59dd8cb126f365fc8e8556a6653"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Google-Plus/zipball/2b007bcfe210f59dd8cb126f365fc8e8556a6653",
+                "reference": "2b007bcfe210f59dd8cb126f365fc8e8556a6653",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "socialiteproviders/manager": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Google\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "DraperStudio",
+                    "email": "hello@draperstud.io"
+                }
+            ],
+            "description": "Google OAuth2 Provider for Laravel Socialite",
+            "time": "2016-07-31 10:32:24"
+        },
+        {
+            "name": "socialiteproviders/instagram",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Instagram.git",
+                "reference": "b18650e5caeaa77279a19e8ba33e066047bab451"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Instagram/zipball/b18650e5caeaa77279a19e8ba33e066047bab451",
+                "reference": "b18650e5caeaa77279a19e8ba33e066047bab451",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "socialiteproviders/manager": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Instagram\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "DraperStudio",
+                    "email": "hello@draperstud.io"
+                }
+            ],
+            "description": "Instagram OAuth2 Provider for Laravel Socialite",
+            "time": "2016-04-01 06:59:12"
         },
         {
             "name": "socialiteproviders/manager",

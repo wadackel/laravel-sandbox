@@ -35,6 +35,57 @@ class SocialController extends Controller
 
 
     /**
+     * FacebookAuth
+     */
+    public function getFacebookAuth()
+    {
+        return Socialite::with('facebook')->redirect();
+    }
+
+    public function getFacebookAuthCallback()
+    {
+        $facebookUser = Socialite::with('facebook')->user();
+        $user = $this->findOrCreateUser($facebookUser, 'facebook');
+        Auth::login($user, true);
+        return redirect('/home');
+    }
+
+
+    /**
+     * GoogleAuth
+     */
+    public function getGoogleAuth()
+    {
+        return Socialite::with('google')->redirect();
+    }
+
+    public function getGoogleAuthCallback()
+    {
+        $googleUser = Socialite::with('google')->user();
+        $user = $this->findOrCreateUser($googleUser, 'google');
+        Auth::login($user, true);
+        return redirect('/home');
+    }
+
+
+    /**
+     * InstagramAuth
+     */
+    public function getInstagramAuth()
+    {
+        return Socialite::with('instagram')->redirect();
+    }
+
+    public function getInstagramAuthCallback()
+    {
+        $instagramUser = Socialite::with('instagram')->user();
+        $user = $this->findOrCreateUser($instagramUser, 'instagram');
+        Auth::login($user, true);
+        return redirect('/home');
+    }
+
+
+    /**
      * Providerからユーザの作成 / 取得
      *
      * @return User
